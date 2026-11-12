@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 330" font-family="system-ui, sans-serif" font-size="20" font-weight="700" text-anchor="middle">
+	<defs>
+		<linearGradient id="laptop-base" x2="0" y2="1">
+			<stop stop-color="#a7bdb8"/>
+			<stop offset="1" stop-color="#5d7d80"/>
+		</linearGradient>
+		<linearGradient id="phone-screen" x2="0" y2="1">
+			<stop stop-color="#174754"/>
+			<stop offset="1" stop-color="#0c2935"/>
+		</linearGradient>
+		<filter id="device-shadow" x="-50%" y="-50%" width="200%" height="200%">
+			<feDropShadow dy="16" stdDeviation="16" flood-opacity=".28"/>
+		</filter>
+	</defs>
+	<path d="M13 252V88a8 8 0 0 1 8-8h164a8 8 0 0 1 8 8v164z" fill="#163d49" stroke="#07161d" stroke-width="8" stroke-linejoin="round" filter="url(#device-shadow)"/>
+	<path d="M12 256h182l11.5 10a11 11 0 0 1-7.5 3H8a11 11 0 0 1-7.5-3z" fill="url(#laptop-base)"/>
+	<g transform="translate(61.5 135.7) scale(.741)" fill="none" stroke="#a9efcd" stroke-width="3">
+		<rect x="31" y="16" width="50" height="50" rx="9"/>
+		<rect x="43" y="28" width="26" height="26" rx="3"/>
+		<path d="M38 4v12m12-12v12m12-12v12m12-12v12M38 66v12m12-12v12m12-12v12m12-12v12M19 23h12M19 36h12M19 49h12M19 62h12M81 23h12M81 36h12M81 49h12M81 62h12" stroke-linecap="round"/>
+	</g>
+	<path d="M200 157.5h106m-106 24h106" stroke="#f5a76f"/>
+	<rect x="312.5" y="46.5" width="132" height="237" rx="21.5" fill="url(#phone-screen)" stroke="#07161d" stroke-width="7" filter="url(#device-shadow)"/>
+	<rect x="353.5" y="44" width="50" height="15" rx="7.5" fill="#07161d"/>
+	<g fill="none" stroke="#a9efcd" stroke-linecap="round" stroke-linejoin="round">
+		<circle cx="378.5" cy="141" r="26" stroke-width="2"/>
+		<path d="m366 141 8.3 8.3 16.6-17.6" stroke-width="4"/>
+	</g>
+	<path d="M341 236.5h75m-75 8h55.5m-55.5 8h39" stroke="#4b7d7e" stroke-width="3" stroke-linecap="round"/>
+	<g fill="#a9efcd">
+		<text x="103" y="229">TPM 2.0</text>
+		<text x="378.5" y="190">Verify<tspan x="378.5" dy="23">&amp; retain</tspan></text>
+	</g>
+	<g font-family="ui-monospace, monospace" font-size="18" letter-spacing=".08em" fill="#9bbbbb">
+		<text x="103" y="118">LINUX HOST</text>
+		<text x="253" y="172" fill="#f5a76f">USB-C</text>
+		<text x="378.5" y="83">ANDROID</text>
+	</g>
+</svg>

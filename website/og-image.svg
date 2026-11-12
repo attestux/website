@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+	<title id="title">AttesTux social preview</title>
+	<desc id="desc">Linux TPM evidence, verified on an Android phone over USB-C.</desc>
+	<defs>
+		<linearGradient id="background" x2="1" y2="1">
+			<stop stop-color="#091b25"/>
+			<stop offset="1" stop-color="#143a44"/>
+		</linearGradient>
+		<radialGradient id="glow">
+			<stop stop-color="#357d74" stop-opacity=".45"/>
+			<stop offset="1" stop-color="#357d74" stop-opacity="0"/>
+		</radialGradient>
+		<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+			<path d="M40 0H0V40" fill="none" stroke="#8bd8ba" stroke-opacity=".07"/>
+		</pattern>
+	</defs>
+	<rect width="1200" height="630" fill="url(#background)"/>
+	<circle cx="1008" cy="246" r="393" fill="url(#glow)"/>
+	<rect width="1200" height="630" fill="url(#grid)"/>
+	<rect x="0" y="618" width="1200" height="12" fill="#a9efcd"/>
+	<svg x="80" y="70" width="55" height="55" viewBox="0 0 108 108">
+		<!-- Derived from the Android launcher icon. Artwork inspired by Tux by Larry Ewing and The GIMP. -->
+		<rect width="108" height="108" rx="24" fill="#F0F1ED" />
+		<g transform="translate(54 54) scale(.82) translate(-54 -54)">
+			<path fill="#16181A" d="M43,8 C30,8 23,18 24,34 C15,44 11,59 12.5,74 C14,90 25,99 42.5,98 C59,99 69,90.5 71.5,75 C74,59 69,44 61,34 C62,18 56,8 43,8 Z" />
+			<path fill="#FFF3D6" d="M25,63 C25,47 32,37 42,36 C44,39 47,39 50,36.5 C57.5,41 61.5,51 61.5,64 C62,83 56,94 43,94 C30,94 23.5,83 25,63 Z" />
+			<path fill="#FFFFFF" d="M33,25 C33,19 35.5,16.5 39,17 C42.5,17.5 43.5,21 43,26 C42.5,31 40.5,33 37.5,32.5 C34.5,32 33,29.5 33,25 Z" />
+			<path fill="#FFFFFF" d="M45,25.5 C45,20 47,17 50,17 C53.5,17 55,20 55,25.5 C55,30.5 53.5,33 50.5,33 C47,33 45,30.5 45,25.5 Z" />
+			<path fill="#16181A" d="M36.5,25.8 a2.7,3.5 0 1,0 5.4,0 a2.7,3.5 0 1,0 -5.4,0 Z" />
+			<path fill="#16181A" d="M47.2,25.8 a2.7,3.5 0 1,0 5.4,0 a2.7,3.5 0 1,0 -5.4,0 Z" />
+			<path fill="#F2A33C" d="M32.5,34.5 C36,30.5 40.5,29 44.5,29 C49,29 53,31 56.5,34.5 C53,39 49,41 44.5,41 C40,41 36,39 32.5,34.5 Z" />
+			<path fill="#D98225" d="M33.5,35 L55.5,35 C52.5,39.2 48.5,40.8 44.5,40.8 C40.5,40.8 36.5,39.2 33.5,35 Z" />
+			<path fill="#16181A" d="M28,43 C19,41 11,51 10.5,64 C10,76 15,84 22,81 C28.5,78 31,66 32,53 Z" />
+			<path fill="#16181A" d="M58,43 C67,41 74,50 75,60 C76,69 71,75 65,72 C60,69.5 57,61 54,51 Z" />
+			<path fill="#F2A33C" d="M35,83 C28,82 17,84 12.5,89 C8.5,93.5 12.5,98.5 20,99.5 C28,100.5 36.5,96.5 41,90 Z" />
+			<path fill="#F2A33C" d="M53,83 C60,82 71,84 75.5,89 C79.5,93.5 75.5,98.5 68,99.5 C60,100.5 51.5,96.5 47,90 Z" />
+			<path fill="#34383C" d="M64,48 L88,54.5 L88,70 C88,81.5 78,89.5 64,95 C50,89.5 40,81.5 40,70 L40,54.5 Z" />
+			<path fill="#E4E7E9" d="M64,55 L81.5,59.8 L81.5,69.8 C81.5,77.5 75,83.8 64,88.5 C53,83.8 46.5,77.5 46.5,69.8 L46.5,59.8 Z" />
+			<path fill="#34383C" d="M52,70 L58.5,76.5 L74.5,62 L78.5,66.5 L58.5,84 L48,73.5 Z" />
+		</g>
+	</svg>
+	<text x="152" y="111" fill="#f3fbf7" font-family="Arial, sans-serif" font-size="36" font-weight="700" letter-spacing="-2">AttesTux</text>
+	<text x="80" y="248" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-3">Linux boot evidence,</text>
+	<text x="80" y="328" fill="#a9efcd" font-family="Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-3">verified on your phone.</text>
+	<text x="83" y="407" fill="#c6dcd9" font-family="Arial, sans-serif" font-size="25">TPM 2.0 evidence over USB-C</text>
+	<rect x="80" y="476" width="274" height="61" rx="9" fill="#a9efcd"/>
+	<text x="107" y="515" fill="#0b2630" font-family="Arial, sans-serif" font-size="20" font-weight="700">Explore the project  →</text>
+	<rect x="861" y="107" width="244" height="420" rx="38" fill="#07161d" stroke="#648c87" stroke-width="2"/>
+	<rect x="878" y="128" width="210" height="378" rx="25" fill="#15414b"/>
+	<rect x="946" y="110" width="76" height="13" rx="7" fill="#07161d"/>
+	<text x="983" y="188" text-anchor="middle" fill="#a9c9c3" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1">ATTESTUX / RESULT</text>
+	<circle cx="983" cy="287" r="65" fill="none" stroke="#a9efcd" stroke-width="4"/>
+	<path d="m946 287 24 25 51-55" fill="none" stroke="#a9efcd" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+	<text x="983" y="391" text-anchor="middle" fill="#f3fbf7" font-family="Arial, sans-serif" font-size="28" font-weight="700">Verified</text>
+	<text x="983" y="427" text-anchor="middle" fill="#a9c9c3" font-family="Arial, sans-serif" font-size="16">Review the evidence</text>
+</svg>

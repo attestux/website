@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#091b25">
+		<meta name="description" content="AttesTux uses an Android phone to verify Linux TPM 2.0 attestations over USB-C and keep a local history of changes.">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="AttesTux: Linux TPM verification on your phone">
+		<meta property="og:description" content="Verify Linux TPM evidence over USB-C. Review changes and keep the history on your Android phone.">
+		<meta property="og:url" content="https://attestux.com/">
+		<meta property="og:image" content="https://attestux.com/og-image.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:image:alt" content="AttesTux: Linux boot evidence, verified on your phone.">
+		<meta name="twitter:card" content="summary_large_image">
+		<link rel="canonical" href="https://attestux.com/">
+		<link rel="icon" type="image/svg+xml" href="./images/app-icon.svg">
+		<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+		<link rel="stylesheet" href="./styles.css">
+		<title>AttesTux: Linux TPM verification on your phone</title>
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+
+		<header class="site-header">
+			<div class="shell header-inner">
+				<a class="brand" href="#top" aria-label="AttesTux home">
+					<img src="./images/app-icon.svg" width="48" height="48" alt="">
+					<span>AttesTux</span>
+				</a>
+				<nav class="site-nav" aria-label="Main navigation">
+					<a href="#how-it-works">How it works</a>
+					<a href="#compatibility">Compatibility</a>
+					<a href="#app-preview">App preview</a>
+					<a href="#questions">Questions</a>
+				</nav>
+				<a class="header-status" href="#get-started">Project status <span aria-hidden="true">→</span></a>
+			</div>
+		</header>
+
+		<main id="main">
+			<section class="hero" id="top" aria-labelledby="hero-title">
+				<div class="shell hero-grid">
+					<div>
+						<p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> In development</p>
+						<h1 id="hero-title">Your Linux boot evidence, <em>verified on your phone.</em></h1>
+						<p class="hero-lede">Use your Android phone to spot changes in your Linux computer's measured boot state. AttesTux verifies signed TPM 2.0 evidence over USB-C and compares it with states you have accepted.</p>
+						<div class="hero-actions">
+							<a class="button button-primary" href="#how-it-works">See how it works <span aria-hidden="true">→</span></a>
+							<a class="button button-ghost" href="#compatibility">Check compatibility <span aria-hidden="true">→</span></a>
+						</div>
+					</div>
+
+					<div class="hero-visual" role="img" aria-label="Conceptual diagram: a Linux computer sends TPM evidence over a USB-C cable to an Android phone for verification">
+						<div class="visual-topline"><span class="visual-pulse" aria-hidden="true"></span> CONCEPTUAL FLOW / USB-C</div>
+						<img class="diagram" src="./images/hero-diagram.svg" width="448" height="330" alt="">
+						<div class="visual-footer"><span>01 / CONNECT</span><span>02 / VERIFY</span><span>03 / REVIEW</span></div>
+					</div>
+				</div>
+				<div class="hero-bottom" aria-hidden="true"></div>
+			</section>
+
+			<section class="section" id="how-it-works" aria-labelledby="how-title">
+				<div class="shell">
+					<div class="section-heading">
+						<p class="section-kicker">The workflow</p>
+						<h2 id="how-title">A direct connection. A clear record.</h2>
+						<p>A firmware update can change boot measurements. AttesTux lets you review those changes on your phone before accepting the new state, and keeps the history locally.</p>
+					</div>
+					<div class="steps">
+						<article class="step">
+							<span class="item-number" aria-hidden="true">01</span>
+							<div class="step-icon" aria-hidden="true">↔</div>
+							<h3>Connect</h3>
+							<p>Start a session on Linux and connect your Android phone over USB-C using Android Open Accessory mode.</p>
+						</article>
+						<article class="step">
+							<span class="item-number" aria-hidden="true">02</span>
+							<div class="step-icon" aria-hidden="true">◇</div>
+							<h3>Verify</h3>
+							<p>The phone checks the TPM identity, key proof, fresh signed quote, and covered boot measurements.</p>
+						</article>
+						<article class="step">
+							<span class="item-number" aria-hidden="true">03</span>
+							<div class="step-icon" aria-hidden="true">≡</div>
+							<h3>Review</h3>
+							<p>Accept the first verified state only when you have reason to trust the computer's setup. It becomes your baseline for reviewing later changes.</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section detail-section" id="what-it-checks" aria-labelledby="checks-title">
+				<div class="shell detail-grid">
+					<div class="detail-copy">
+						<p class="section-kicker">Evidence, not a green light</p>
+						<h2 id="checks-title">See what changed, and keep the proof.</h2>
+						<p>Each scan ties a fresh challenge to a TPM quote. The phone checks the cryptographic evidence before comparing the result with the state you accepted earlier.</p>
+						<a class="text-link" href="#app-preview">See the Android interface <span aria-hidden="true">→</span></a>
+					</div>
+					<div class="evidence-list">
+						<div class="evidence-item"><span class="item-number" aria-hidden="true">01</span><div><h3>Hardware identity</h3><p>Endorsement certificate and attestation key checks.</p></div></div>
+						<div class="evidence-item"><span class="item-number" aria-hidden="true">02</span><div><h3>Fresh signed evidence</h3><p>Credential activation, nonce, signature, and quote coverage.</p></div></div>
+						<div class="evidence-item"><span class="item-number" aria-hidden="true">03</span><div><h3>Changes you can inspect</h3><p>Trust policy, key identity, PCR digests, and replay coverage, with verification reports stored locally.</p></div></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="app-preview" aria-labelledby="preview-title">
+				<div class="shell">
+					<div class="section-heading">
+						<div class="preview-identity">
+							<img src="./images/app-icon.svg" width="80" height="80" loading="lazy" alt="AttesTux app icon showing a penguin and shield">
+							<p class="section-kicker">Android app preview</p>
+						</div>
+						<h2 id="preview-title">A result you can read. A change you can review.</h2>
+						<p>These are captures of the current Android interface using sample test data. They illustrate the app flow, not a live device scan.</p>
+					</div>
+					<div class="preview-grid">
+						<figure class="preview-figure">
+							<div class="preview-image-wrap"><img src="./images/verification-result.png" width="393" height="852" loading="lazy" alt="Android verification result showing a green Boot state matches message and buttons to open the device or technical report"></div>
+							<figcaption><strong>Matching state</strong><span>The new scan matches the state you trusted.</span></figcaption>
+						</figure>
+						<figure class="preview-figure">
+							<div class="preview-image-wrap"><img src="./images/review-required.png" width="393" height="852" loading="lazy" alt="Android screen for Office laptop showing a Review required notice and a Review changed state button"></div>
+							<figcaption><strong>Review required</strong><span>A changed state is surfaced for inspection.</span></figcaption>
+						</figure>
+					</div>
+					<section class="report-example" aria-labelledby="report-title">
+						<div class="report-intro">
+							<p class="section-kicker">Inside a report</p>
+							<h3 id="report-title">The result has evidence behind it.</h3>
+							<p>The phone keeps a verification report with PCR results, event details, and replay coverage. This illustrative excerpt uses a clean UI test fixture; it is not an exported report or a live scan.</p>
+						</div>
+						<div class="report-paper">
+							<div class="report-paper-head"><span>ATTESTUX / SAMPLE REPORT EXCERPT</span><span class="report-status"><span aria-hidden="true">●</span> Verified</span></div>
+							<dl>
+								<div><dt>Trust policy</dt><dd>Nuvoton TPM certificate authority</dd></div>
+								<div><dt>Quote coverage</dt><dd>SHA-256 · PCR 0–15</dd></div>
+								<div><dt>Event-log replay</dt><dd>16 of 16 PCRs in this sample</dd></div>
+								<div><dt>Attestation warnings</dt><dd>None in this sample</dd></div>
+							</dl>
+							<p>The report includes an evidence hash, PCR results, and normalized event entries.</p>
+						</div>
+					</section>
+				</div>
+			</section>
+
+			<section class="section boundaries" aria-labelledby="scope-title">
+				<div class="shell boundary-grid">
+					<div>
+						<p class="section-kicker">Security scope</p>
+						<h2 id="scope-title">Know exactly what it covers.</h2>
+					</div>
+					<div class="boundary-copy">
+						<p>V1 requests SHA-256 measurements for PCRs 0–15. Verification and report storage happen on the phone, without an Internet permission.</p>
+						<p>Verification checks the TPM evidence. Trusting a state is your decision: the first state you accept becomes your baseline. AttesTux cannot establish that this initial state is free of compromise, and later changes require your review before acceptance.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section requirements" id="compatibility" aria-labelledby="requirements-title">
+				<div class="shell">
+					<div class="section-heading">
+						<p class="section-kicker">Compatibility</p>
+						<h2 id="requirements-title">The setup AttesTux targets.</h2>
+						<p>These are the hardware and software conditions for the current development builds. Public app and collector builds are not available yet.</p>
+					</div>
+					<div class="requirements-grid">
+						<article class="requirement"><span class="item-number" aria-hidden="true">01</span><h3>Android 10 or newer</h3><p>An Android phone connected to the Linux host over USB-C, with accessory access granted to the app.</p></article>
+						<article class="requirement"><span class="item-number" aria-hidden="true">02</span><h3>Linux TPM 2.0</h3><p>The host needs read and write access to its TPM and USB device.</p></article>
+						<article class="requirement"><span class="item-number" aria-hidden="true">03</span><h3>Firmware event log</h3><p>The host needs a readable firmware event log for PCR replay checks.</p></article>
+						<article class="requirement"><span class="item-number" aria-hidden="true">04</span><h3>Supported TPM identity</h3><p>Production builds currently trust bundled Nuvoton TPM 2.0 roots. The EK certificate must match its provisioned key.</p></article>
+					</div>
+				</div>
+			</section>
+
+			<section class="section questions" id="questions" aria-labelledby="questions-title">
+				<div class="shell questions-grid">
+					<div>
+						<p class="section-kicker">Common questions</p>
+						<h2 id="questions-title">What does the result mean?</h2>
+						<p>A verified scan and a trusted baseline answer different questions. AttesTux shows both so you can review a change before accepting it.</p>
+					</div>
+					<div class="faq-list">
+						<details>
+							<summary>How should I choose the first trusted state?</summary>
+							<p>Start with a computer whose firmware and operating system you have set up and checked through a process you trust. The first scan has no earlier accepted state to compare against. Passing verification alone does not make it a trustworthy baseline: if you accept a compromised state, future scans will be compared against that baseline.</p>
+						</details>
+						<details>
+							<summary>Does “Boot state matches” mean the computer is safe?</summary>
+							<p>It means the TPM evidence passed AttesTux's checks and the covered measured state matches one you previously trusted. It does not assess every possible compromise, every PCR bank, or the TPM's complete allocation.</p>
+						</details>
+						<details>
+							<summary>What happens when the boot state changes?</summary>
+							<p>The phone asks you to review changes in the trust policy, endorsement key, PCR digests, or replay coverage. A verified change is not automatically added to your trusted history.</p>
+						</details>
+						<details>
+							<summary>Does AttesTux prove proximity or unlock Linux?</summary>
+							<p>No. USB and TPM activation can be relayed. AttesTux does not handle login, biometrics, or proximity authentication.</p>
+						</details>
+						<details>
+							<summary>Can it detect a revoked TPM certificate?</summary>
+							<p>No. Certificate checks are offline and do not use OCSP or CRLs, so AttesTux cannot determine whether a certificate has been revoked.</p>
+						</details>
+					</div>
+				</div>
+			</section>
+
+			<section class="section get-started" id="get-started" aria-labelledby="start-title">
+				<div class="shell start-grid">
+					<div>
+						<p class="section-kicker">Project status</p>
+						<h2 id="start-title">No public build yet.</h2>
+						<div class="start-actions">
+							<a class="button button-dark" href="https://github.com/attestux/protocol">Inspect protocol definitions <span aria-hidden="true">↗</span></a>
+							<a class="text-link" href="#compatibility">See compatibility <span aria-hidden="true">↑</span></a>
+						</div>
+					</div>
+					<div class="availability-card">
+						<div><span>PUBLIC NOW</span><strong>Protocol schemas and validation script</strong></div>
+						<div><span>IN DEVELOPMENT</span><strong>Android verifier and Linux collector</strong></div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="shell footer-inner">
+				<div><a class="brand footer-brand" href="#top"><img src="./images/app-icon.svg" width="34" height="34" alt=""><span>AttesTux</span></a><p>Linux TPM evidence, verified on Android.</p></div>
+				<div class="footer-links"><a href="https://github.com/attestux/">GitHub</a><a href="https://github.com/attestux/protocol">Protocol</a><a href="#get-started">Project status</a><a href="#top">Back to top ↑</a></div>
+			</div>
+		</footer>
+	</body>
+</html>
