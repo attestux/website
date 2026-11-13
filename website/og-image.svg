@@ -39,18 +39,18 @@
 			<path fill="#34383C" d="M52,70 L58.5,76.5 L74.5,62 L78.5,66.5 L58.5,84 L48,73.5 Z" />
 		</g>
 	</svg>
-	<text x="152" y="111" fill="#f3fbf7" font-family="Arial, sans-serif" font-size="36" font-weight="700" letter-spacing="-2">AttesTux</text>
-	<text x="80" y="248" fill="#ffffff" font-family="Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-3">Linux boot evidence,</text>
-	<text x="80" y="328" fill="#a9efcd" font-family="Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-3">verified on your phone.</text>
-	<text x="83" y="407" fill="#c6dcd9" font-family="Arial, sans-serif" font-size="25">TPM 2.0 evidence over USB-C</text>
+	<text x="152" y="111" fill="#f3fbf7" font-family="DejaVu Sans, sans-serif" font-size="36" font-weight="700" letter-spacing="-2">AttesTux</text>
+	<text x="80" y="248" fill="#ffffff" font-family="DejaVu Sans, sans-serif" font-size="58" font-weight="700" letter-spacing="-3">Linux boot evidence,</text>
+	<text x="80" y="328" fill="#a9efcd" font-family="DejaVu Sans, sans-serif" font-size="58" font-weight="700" letter-spacing="-3">verified on your phone.</text>
+	<text x="83" y="407" fill="#c6dcd9" font-family="DejaVu Sans, sans-serif" font-size="25">TPM 2.0 evidence over USB-C</text>
 	<rect x="80" y="476" width="274" height="61" rx="9" fill="#a9efcd"/>
-	<text x="107" y="515" fill="#0b2630" font-family="Arial, sans-serif" font-size="20" font-weight="700">Explore the project  →</text>
+	<text x="107" y="515" fill="#0b2630" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="700">Explore the project  →</text>
 	<rect x="861" y="107" width="244" height="420" rx="38" fill="#07161d" stroke="#648c87" stroke-width="2"/>
 	<rect x="878" y="128" width="210" height="378" rx="25" fill="#15414b"/>
 	<rect x="946" y="110" width="76" height="13" rx="7" fill="#07161d"/>
-	<text x="983" y="188" text-anchor="middle" fill="#a9c9c3" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1">ATTESTUX / RESULT</text>
+	<text x="983" y="188" text-anchor="middle" fill="#a9c9c3" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="700" letter-spacing="1">ATTESTUX / RESULT</text>
 	<circle cx="983" cy="287" r="65" fill="none" stroke="#a9efcd" stroke-width="4"/>
 	<path d="m946 287 24 25 51-55" fill="none" stroke="#a9efcd" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-	<text x="983" y="391" text-anchor="middle" fill="#f3fbf7" font-family="Arial, sans-serif" font-size="28" font-weight="700">Verified</text>
-	<text x="983" y="427" text-anchor="middle" fill="#a9c9c3" font-family="Arial, sans-serif" font-size="16">Review the evidence</text>
+	<text x="983" y="391" text-anchor="middle" fill="#f3fbf7" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700">Verified</text>
+	<text x="983" y="427" text-anchor="middle" fill="#a9c9c3" font-family="DejaVu Sans, sans-serif" font-size="16">Review the evidence</text>
 </svg>

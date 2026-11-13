@@ -31,11 +31,21 @@
 				</a>
 				<nav class="site-nav" aria-label="Main navigation">
 					<a href="#how-it-works">How it works</a>
-					<a href="#compatibility">Compatibility</a>
 					<a href="#app-preview">App preview</a>
+					<a href="#compatibility">Compatibility</a>
 					<a href="#questions">Questions</a>
 				</nav>
 				<a class="header-status" href="#get-started">Project status <span aria-hidden="true">→</span></a>
+				<details class="mobile-menu">
+					<summary>Menu <span aria-hidden="true">☰</span></summary>
+					<nav class="mobile-nav" aria-label="Mobile navigation">
+						<a href="#how-it-works">How it works</a>
+						<a href="#app-preview">App preview</a>
+						<a href="#compatibility">Compatibility</a>
+						<a href="#questions">Questions</a>
+						<a href="#get-started">Project status</a>
+					</nav>
+				</details>
 			</div>
 		</header>
 
@@ -45,7 +55,7 @@
 					<div>
 						<p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> In development</p>
 						<h1 id="hero-title">Your Linux boot evidence, <em>verified on your phone.</em></h1>
-						<p class="hero-lede">Use your Android phone to spot changes in your Linux computer's measured boot state. AttesTux verifies signed TPM 2.0 evidence over USB-C and compares it with states you have accepted.</p>
+						<p class="hero-lede">Spot changes in your Linux boot state. Your Android phone verifies signed TPM 2.0 evidence over USB-C and compares it with states you trust.</p>
 						<div class="hero-actions">
 							<a class="button button-primary" href="#how-it-works">See how it works <span aria-hidden="true">→</span></a>
 							<a class="button button-ghost" href="#compatibility">Check compatibility <span aria-hidden="true">→</span></a>
@@ -119,11 +129,11 @@
 					</div>
 					<div class="preview-grid">
 						<figure class="preview-figure">
-							<div class="preview-image-wrap"><img src="./images/verification-result.png" width="393" height="852" loading="lazy" alt="Android verification result showing a green Boot state matches message and buttons to open the device or technical report"></div>
+							<div class="preview-image-wrap"><img src="./images/verification-result.png" width="393" height="852" loading="lazy" alt="Android verification result for Office laptop showing Boot state matches, with Done and Open device buttons"></div>
 							<figcaption><strong>Matching state</strong><span>The new scan matches the state you trusted.</span></figcaption>
 						</figure>
 						<figure class="preview-figure">
-							<div class="preview-image-wrap"><img src="./images/review-required.png" width="393" height="852" loading="lazy" alt="Android screen for Office laptop showing a Review required notice and a Review changed state button"></div>
+							<div class="preview-image-wrap"><img src="./images/review-required.png" width="393" height="852" loading="lazy" alt="Android screen for Office laptop showing a Review required notice and a Review changes button"></div>
 							<figcaption><strong>Review required</strong><span>A changed state is surfaced for inspection.</span></figcaption>
 						</figure>
 					</div>
@@ -131,7 +141,7 @@
 						<div class="report-intro">
 							<p class="section-kicker">Inside a report</p>
 							<h3 id="report-title">The result has evidence behind it.</h3>
-							<p>The phone keeps a verification report with PCR results, event details, and replay coverage. This illustrative excerpt uses a clean UI test fixture; it is not an exported report or a live scan.</p>
+							<p>The phone keeps a verification report with PCR results, event details, and replay coverage. This illustrative excerpt uses sample data.</p>
 						</div>
 						<div class="report-paper">
 							<div class="report-paper-head"><span>ATTESTUX / SAMPLE REPORT EXCERPT</span><span class="report-status"><span aria-hidden="true">●</span> Verified</span></div>
